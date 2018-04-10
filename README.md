@@ -1,19 +1,5 @@
-# Getting Started
+# Devjobs
 
-(1) Clone the repository
+## Project
 
-(2) Remove the origin
-
-(3) Add Packages
-
-(4) Run the server:
-
-- In Development (runs with nodemon)
-  ```sh
-  npm run dev
-  ```
-
-- In Production 
-  ```sh
-  npm start
-  ```
+Express and React
