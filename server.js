@@ -1,8 +1,13 @@
 const express = require('express')
 const app = express()
+const ejs = require('ejs')
 
 const pageRouter = require('./src/routers/pageRouter')
 const apiRouter = require('./src/routers/apiRouter')
+
+app.engine('ejs', ejs.renderFile)
+app.set('view engine', 'ejs')
+app.set('views', `${__dirname}/src/views`)
 
 app.use(express.static(`${__dirname}/public`))
 
