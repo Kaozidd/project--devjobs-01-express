@@ -3,18 +3,18 @@ exports.up = function(knex, Promise) {
   return knex
   	.schema
   	.createTable('jobs', function(t) {
-  		t.increments();
-  		t.string('title');
-  		t.text('description');
-  		t.string('location');
-  		t.integer('salary');
-  		t.boolean('fullTime');
-  		t.integer('companyId')
+  		t.increments()
+  		t.string('title')
+  		t.text('description')
+  		t.string('location')
+  		t.integer('salary')
+  		t.boolean('fullTime')
+      // t.integer('companyId')
   	})
 };
 
 exports.down = function(knex, Promise) {
   return knex
   	.schema
-  	.dropTableIfExists('jobs')
+    .dropTableIfExists('jobs')
 };
